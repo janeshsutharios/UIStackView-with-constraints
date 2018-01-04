@@ -27,35 +27,47 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="UIstackView_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="n2j-rE-da7">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="zH4-7a-E5u">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3k4-dp-TM1" userLabel="greenView">
-                                        <rect key="frame" x="0.0" y="0.0" width="135" height="480"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="460"/>
                                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZ5-qh-mzz" userLabel="redView">
-                                        <rect key="frame" x="135" y="0.0" width="80" height="480"/>
+                                        <rect key="frame" x="135" y="0.0" width="80" height="460"/>
                                         <color key="backgroundColor" red="1" green="0.010235034" blue="0.094128232549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcH-My-axa" userLabel="blueView">
-                                        <rect key="frame" x="215" y="0.0" width="105" height="480"/>
+                                        <rect key="frame" x="215" y="0.0" width="105" height="460"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="hcH-My-axa" firstAttribute="top" secondItem="zH4-7a-E5u" secondAttribute="top" id="1gU-zo-x5B"/>
+                                    <constraint firstItem="EZ5-qh-mzz" firstAttribute="leading" secondItem="3k4-dp-TM1" secondAttribute="trailing" id="5JU-5S-rCd"/>
+                                    <constraint firstItem="hcH-My-axa" firstAttribute="leading" secondItem="EZ5-qh-mzz" secondAttribute="trailing" id="6AI-fm-PDA"/>
+                                    <constraint firstAttribute="bottom" secondItem="hcH-My-axa" secondAttribute="bottom" id="KFL-cB-rra"/>
+                                    <constraint firstAttribute="bottom" secondItem="EZ5-qh-mzz" secondAttribute="bottom" id="OEi-MR-WaZ"/>
+                                    <constraint firstItem="EZ5-qh-mzz" firstAttribute="top" secondItem="zH4-7a-E5u" secondAttribute="top" id="T47-aV-y62"/>
+                                    <constraint firstAttribute="bottom" secondItem="3k4-dp-TM1" secondAttribute="bottom" id="UmF-sS-8Co"/>
+                                    <constraint firstItem="3k4-dp-TM1" firstAttribute="top" secondItem="zH4-7a-E5u" secondAttribute="top" id="YYV-lj-VKC"/>
+                                    <constraint firstAttribute="trailing" secondItem="hcH-My-axa" secondAttribute="trailing" id="hlc-QT-iv9"/>
+                                    <constraint firstItem="3k4-dp-TM1" firstAttribute="leading" secondItem="zH4-7a-E5u" secondAttribute="leading" id="qCd-bC-EMp"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="n2j-rE-da7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0mX-8v-vr3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n2j-rE-da7" secondAttribute="bottom" id="Lis-VO-X92"/>
-                            <constraint firstItem="n2j-rE-da7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QeH-00-csx"/>
-                            <constraint firstItem="n2j-rE-da7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jHh-z5-dLO"/>
+                            <constraint firstItem="zH4-7a-E5u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7Nl-9X-gtM"/>
+                            <constraint firstItem="zH4-7a-E5u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B5c-vR-Fla"/>
+                            <constraint firstItem="zH4-7a-E5u" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hB5-tO-jYs"/>
+                            <constraint firstItem="zH4-7a-E5u" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="iRB-p1-rAH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
